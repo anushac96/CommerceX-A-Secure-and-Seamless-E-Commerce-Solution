@@ -1,4 +1,4 @@
-# CommerceX-A-Secure-and-Seamless-E-Commerce-Solution
+# GlamHub-A-Secure-and-Seamless-E-Commerce-Solution
 Welcome to my GitHub repository showcasing a production-level eCommerce website developed from scratch! This project is a result of hands-on experience gained through a comprehensive tutorial series aimed at enhancing skills in full-stack development.
 
 In this project, I have leveraged popular technologies such as Spring Boot, React, MySQL, Razorpay, Material-UI (MUI), Tailwind CSS, Redux, and React Router DOM to create a robust and user-friendly eCommerce platform. The frontend design focuses on creating an engaging user interface using React and Material-UI, incorporating features like carousels, product filtering, sorting, and pagination for a seamless browsing experience.
