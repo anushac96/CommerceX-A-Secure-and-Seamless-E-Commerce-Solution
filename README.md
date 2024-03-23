@@ -13,28 +13,28 @@ This project serves as a testament to my proficiency in full-stack development a
 ## Project setup(Required for me)
 1. npx create-react-app glamhub 
 2. install mui Material UI
-    a. open https://mui.com/
-    b. click on discover core libraries
-    c. click on material UI
-    d. click on get started
-    e. click on instalation and copy the cmd
+    - open https://mui.com/
+    - click on discover core libraries
+    - click on material UI
+    - click on get started
+    - click on instalation and copy the cmd
         eg: npm install @mui/material @emotion/react @emotion/styled
 3. install mui Material icon
-    a. open https://mui.com/
-    b. click on discover core libraries
-    c. click on material UI
-    d. click on get started
-    e. click on components
-    f. click on material icon and copy the cmd
-        eg: npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+    - open https://mui.com/
+    - click on discover core libraries
+    - click on material UI
+    - click on get started
+    - click on components
+    - click on material icon and copy the cmd
+        - eg: npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 4. install tailwind css
-    a. https://tailwindcss.com/docs/installation
-    b. click on framework guidelines
-    c. click on create react app
-    d. copy cmds of Install Tailwind CSS
+    - https://tailwindcss.com/docs/installation
+    - click on framework guidelines
+    - click on create react app
+    - copy cmds of Install Tailwind CSS
         npm install -D tailwindcss
         npx tailwindcss init
-    e. copy code snippet of Configure your template paths and paste it in tailwind.config.js
+    - copy code snippet of Configure your template paths and paste it in tailwind.config.js
     ```
         /** @type {import('tailwindcss').Config} */
         module.exports = {
@@ -53,3 +53,7 @@ This project serves as a testament to my proficiency in full-stack development a
         @tailwind components;
         @tailwind utilities;
     ```
+6. open tailwind UI component: https://tailwindui.com/components/#product-application-ui
+    - under component category select Store Navigation use that code
+    - npm i @heroicons/react
+    - install npm i @headlessui/react
