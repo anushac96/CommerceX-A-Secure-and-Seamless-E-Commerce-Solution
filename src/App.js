@@ -1,7 +1,12 @@
-export default function App() {
+import './App.css'
+import Navigation from './customer/components/navigation/Navigation';
+
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div>
+      <Navigation></Navigation>
+    </div>
+  );
 }
+
+export default App;
