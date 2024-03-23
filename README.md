@@ -58,5 +58,7 @@ This project serves as a testament to my proficiency in full-stack development a
     - under component category select Store Navigation use that code
     - npm i @heroicons/react
     - install npm i @headlessui/react
-    
+
+7. install carousel: npm i react-alice-carousel 
+    - click on live demo and copy the code
 -->
