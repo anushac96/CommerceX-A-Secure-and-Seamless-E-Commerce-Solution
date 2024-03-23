@@ -10,6 +10,7 @@ To facilitate secure online transactions, the Razorpay payment gateway has been 
 Moreover, an intuitive admin panel has been developed to streamline product and order management tasks. Administrators can effortlessly add, edit, manage products, and track orders efficiently through this dashboard.
 This project serves as a testament to my proficiency in full-stack development and showcases my ability to create functional eCommerce websites using modern technologies.
 
+<--
 ## Project setup(Required for me)
 1. npx create-react-app glamhub 
 2. install mui Material UI
@@ -57,3 +58,5 @@ This project serves as a testament to my proficiency in full-stack development a
     - under component category select Store Navigation use that code
     - npm i @heroicons/react
     - install npm i @headlessui/react
+    
+-->
