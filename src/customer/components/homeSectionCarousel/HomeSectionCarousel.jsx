@@ -13,7 +13,7 @@ const HomeSectionCarousel = () => {
 
   const items = [1, 1, 1, 1, 1].map((items) => <HomeSectionCard></HomeSectionCard>)
   return (
-    <div className='px-4 lg:px-8 border border-black'>
+    <div className='border'>
       <div className='relative p-5 '>
       <AliceCarousel
         items={items}
@@ -28,7 +28,7 @@ const HomeSectionCarousel = () => {
       </Button>
 
       <Button className='z-50 bg-white' variant='contained' sx={{position:'absolute', top:'8rem', left:'0rem', 
-      transform:'translateX(50%) rotate(90deg)', bgcolor:'white'}} aria-label='next'>
+      transform:'translateX(-50%) rotate(90deg)', bgcolor:'white'}} aria-label='next'>
         <KeyboardArrowLeftIcon sx={{transform:'rotate(-90deg)',color:'black' }}></KeyboardArrowLeftIcon>
       </Button>
 
