@@ -1,7 +1,8 @@
 import React from 'react'
 import AliceCarousel from 'react-alice-carousel';
 import HomeSectionCard from '../homeSectionCard/HomeSectionCard';
-
+import { Button } from '@mui/material';
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
 const HomeSectionCarousel = () => {
   const responsive = {
@@ -12,14 +13,25 @@ const HomeSectionCarousel = () => {
 
   const items = [1, 1, 1, 1, 1].map((items) => <HomeSectionCard></HomeSectionCard>)
   return (
-    <div className='relative px-4 lg:px-8'>
-      <div className='relative p-5'>
+    <div className='px-4 lg:px-8 border border-black'>
+      <div className='relative p-5 '>
       <AliceCarousel
         items={items}
         disableButtonsControls
         infinite
         responsive={responsive}
+        disableDotsControls
       />
+      <Button className='z-50 bg-white' variant='contained' sx={{position:'absolute', top:'8rem', right:'0rem', 
+      transform:'translateX(50%) rotate(90deg)', bgcolor:'white'}} aria-label='next'>
+        <KeyboardArrowLeftIcon sx={{transform:'rotate(90deg)',color:'black' }}></KeyboardArrowLeftIcon>
+      </Button>
+
+      <Button className='z-50 bg-white' variant='contained' sx={{position:'absolute', top:'8rem', left:'0rem', 
+      transform:'translateX(50%) rotate(90deg)', bgcolor:'white'}} aria-label='next'>
+        <KeyboardArrowLeftIcon sx={{transform:'rotate(-90deg)',color:'black' }}></KeyboardArrowLeftIcon>
+      </Button>
+
       </div>
     </div>
   )
