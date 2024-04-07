@@ -6,7 +6,7 @@ import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import { Button } from '@mui/material';
 import { mens_kurta } from '../../../data/men/MenKurta';
 
-const HomeSectionCarousel = () => {
+const HomeSectionCarousel = ({data,sectionName}) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const responsive = {
         0: { items: 1 },
@@ -31,7 +31,7 @@ const HomeSectionCarousel = () => {
         const slidesInRow = responsive[1024].items;
         
         // Calculate the total number of slides
-        const totalSlides = mens_kurta.length;
+        const totalSlides = data.length;
     
         // Calculate the index of the last slide in the current row
         const lastSlideIndexInRow = activeIndex * slidesInRow + slidesInRow - 1;
@@ -60,10 +60,11 @@ const HomeSectionCarousel = () => {
 
     const startIndex = activeIndex * responsive[1024].items;
     const endIndex = startIndex + responsive[1024].items;
-    const items = mens_kurta.slice(startIndex, endIndex).map((item) => <HomeSectionCard key={item.id} product={item} />);
+    const items = data.slice(startIndex, endIndex).map((item) => <HomeSectionCard key={item.id} product={item} />);
 
     return (
         <div className="border">
+            <h2 className='text-2x1 font-extrabold text-gray-800 py-5'>{sectionName}</h2>
             <div className="relative p-5">
                 <AliceCarousel
                     items={items}
@@ -91,7 +92,7 @@ const HomeSectionCarousel = () => {
                         <KeyboardArrowLeftIcon sx={{ transform: 'rotate(-90deg)', color: 'black' }} />
                     </Button>
                 )}
-                {activeIndex !== Math.floor(mens_kurta.length / responsive[1024].items) &&  (
+                {activeIndex !== Math.floor(data.length / responsive[1024].items) &&  (
                     <Button
                         variant="contained"
                         className="z-50"
